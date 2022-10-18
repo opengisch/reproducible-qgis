@@ -1,7 +1,17 @@
-Reproducible QGIS with grass
+* Reproducible QGIS with grass
 
+Clone this repostory
+#+begin_src sh
+  git clone https://github.com/opengisch/reproducible-qgis.git
+#+end_src
+
+Grant access to the X server
 #+begin_src sh
   xhost +
+#+end_src
+
+#+begin_src sh
+  cd reproducible-qgis
   docker-compose build
   docker-compose up
 #+end_src
