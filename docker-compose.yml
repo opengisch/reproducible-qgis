@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  qgis:
+    build: ./qgis
+    environment:
+      - DISPLAY=${DISPLAY}
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - ./io/:/io/
+      # TODO: host .qgis directory?
+    network_mode: host

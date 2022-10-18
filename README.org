@@ -1,0 +1,7 @@
+Reproducible QGIS with grass
+
+#+begin_src sh
+  xhost +
+  docker-compose build
+  docker-compose up
+#+end_src
