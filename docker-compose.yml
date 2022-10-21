@@ -9,4 +9,5 @@ services:
       - /tmp/.X11-unix:/tmp/.X11-unix
       - ./io/:/io/
       # TODO: host .qgis directory?
+    privileged: true
     network_mode: host
