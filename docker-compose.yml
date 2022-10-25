@@ -8,6 +8,9 @@ services:
     volumes:
       - /tmp/.X11-unix:/tmp/.X11-unix
       - ./io/:/io/
-      # TODO: host .qgis directory?
+      - qgis_share:/root/.local/share/QGIS
     privileged: true
     network_mode: host
+
+volumes:
+  qgis_share:
