@@ -1,10 +1,17 @@
-* Reproducible QGIS with grass
+#+title: Reproducible QGIS with GRASS and pzp_utils plugin installed
 
+* Install
 Clone this repostory
 #+begin_src sh
   git clone https://github.com/opengisch/reproducible-qgis.git
 #+end_src
 
+* Update
+#+begin_src sh
+  git pull
+#+end_src
+
+* Use
 Grant access to the X server
 #+begin_src sh
   xhost +
@@ -15,3 +22,5 @@ Grant access to the X server
   docker-compose build
   docker-compose up
 #+end_src
+
+The first time you'll need to activate the plugin in the QGIS plugin manager 
